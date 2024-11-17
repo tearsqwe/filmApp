@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidAcademy</string>
+    <string name="PG">13+</string>
+    <string name="avangers_end_game">Avangers: End Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
