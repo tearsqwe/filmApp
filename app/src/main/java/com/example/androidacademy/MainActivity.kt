@@ -22,14 +22,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         if (savedInstanceState==null){
-            val fragment= BlankFragment()
+            val fragment= FragmentMoveList()
             supportFragmentManager.beginTransaction()
                 .add(R.id.fragment_container,fragment)
                 .commit()
         }
         fragment.setOnClickListener(){
-            val intent= Intent(this, MovieDetailsActivity::class.java)
-            startActivity(intent)
+            val secondFragment=BlankFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main,secondFragment)
+                .addToBackStack(null)
+                .commit()
         }
 
     }
